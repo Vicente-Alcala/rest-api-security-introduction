@@ -15,6 +15,12 @@ import jakarta.persistence.Table;
 
 import jakarta.persistence.JoinColumn;
 
+/**
+ * JPA entity representing an authenticated user
+ * mapped to the {@code auth_user} database table,
+ * including their credentials and assigned authorization
+ * roles.
+ */
 @Entity 
 @Table(name="auth_user")
 public class Auth_User {
@@ -27,13 +33,23 @@ public class Auth_User {
     private String password;
 
     @ManyToMany(fetch=FetchType.EAGER, cascade=CascadeType.ALL)
-    @JoinTable(name="authusers_authroles", joinColumns=@JoinColumn(name="authuser_id",referencedColumnName="id"),inverseJoinColumns=@JoinColumn(name="authrole_id",referencedColumnName="id"))
+    @JoinTable(name="authusers_authroles", joinColumns=@JoinColumn(
+        name="authuser_id",referencedColumnName="id"),
+        inverseJoinColumns=@JoinColumn(
+            name="authrole_id",referencedColumnName="id"))
     private List<Auth_Role> roles = new ArrayList<>();
 
+    /**
+     * Default no-argument constructor required by JPA.
+     */
     public Auth_User() {
     }
 
-    public Auth_User(Long id, String username, String password, List<Auth_Role> roles) {
+    public Auth_User(
+        Long id,
+        String username,
+        String password,
+        List<Auth_Role> roles) {
         this.id = id;
         this.username = username;
         this.password = password;

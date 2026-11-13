@@ -6,6 +6,10 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
+/**
+ * JPA entity representing an authorization role
+ * mapped to the {@code auth_role} database table.
+ */
 @Entity 
 @Table(name="auth_role")
 public class Auth_Role {
@@ -15,6 +19,9 @@ public class Auth_Role {
     private Long id;
     private String name;
     
+    /**
+     * Default no-argument constructor required by JPA.
+     */
     public Auth_Role() {
     }
     

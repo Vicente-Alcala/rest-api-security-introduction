@@ -1,5 +1,9 @@
 package com.spring.spring_rest_security.dto;
 
+/**
+ * Data Transfer Object (DTO) representing the
+ * credentials submitted during user login.
+ */
 public class AuthLoginDto {
     private String username;
     private String password;

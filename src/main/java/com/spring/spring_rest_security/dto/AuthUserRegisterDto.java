@@ -1,5 +1,9 @@
 package com.spring.spring_rest_security.dto;
 
+/**
+ * Data Transfer Object (DTO) representing the
+ * payload submitted during new user registration.
+ */
 public class AuthUserRegisterDto {
 
     private String username;
