@@ -1,4 +1,4 @@
-package com.spring.spring_rest.entity;
+package com.spring.spring_rest_security.entity;
 
 /**
  * POJO representing a standardized JSON

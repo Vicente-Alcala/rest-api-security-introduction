@@ -1,7 +1,7 @@
-package com.spring.spring_rest.mapper;
+package com.spring.spring_rest_security.mapper;
 
-import com.spring.spring_rest.dto.StudentDto;
-import com.spring.spring_rest.entity.Student;
+import com.spring.spring_rest_security.dto.StudentDto;
+import com.spring.spring_rest_security.entity.Student;
 
 /**
  * Utility mapper class responsible for converting between {@link Student} JPA

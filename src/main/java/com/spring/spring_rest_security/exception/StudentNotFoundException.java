@@ -1,4 +1,4 @@
-package com.spring.spring_rest.exception;
+package com.spring.spring_rest_security.exception;
 
 /**
  * Custom unchecked exception thrown when a

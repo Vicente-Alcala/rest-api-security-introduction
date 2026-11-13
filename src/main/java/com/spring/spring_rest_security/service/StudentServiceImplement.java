@@ -1,15 +1,15 @@
-package com.spring.spring_rest.service;
+package com.spring.spring_rest_security.service;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
 import org.springframework.stereotype.Service;
 
-import com.spring.spring_rest.dto.StudentDto;
-import com.spring.spring_rest.entity.Student;
-import com.spring.spring_rest.exception.StudentNotFoundException;
-import com.spring.spring_rest.mapper.StudentMapper;
-import com.spring.spring_rest.repository.StudentRepository;
+import com.spring.spring_rest_security.dto.StudentDto;
+import com.spring.spring_rest_security.entity.Student;
+import com.spring.spring_rest_security.exception.StudentNotFoundException;
+import com.spring.spring_rest_security.mapper.StudentMapper;
+import com.spring.spring_rest_security.repository.StudentRepository;
 
 /**
  * Service implementation for managing {@link StudentDto}

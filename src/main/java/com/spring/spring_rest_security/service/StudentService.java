@@ -1,8 +1,8 @@
-package com.spring.spring_rest.service;
+package com.spring.spring_rest_security.service;
 
 import java.util.List;
 
-import com.spring.spring_rest.dto.StudentDto;
+import com.spring.spring_rest_security.dto.StudentDto;
 
 /**
  * Service interface defining business operations

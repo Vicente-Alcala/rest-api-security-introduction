@@ -1,9 +1,9 @@
-package com.spring.spring_rest.controller;
+package com.spring.spring_rest_security.controller;
 
 import org.springframework.web.bind.annotation.RestController;
 
-import com.spring.spring_rest.dto.StudentDto;
-import com.spring.spring_rest.service.StudentService;
+import com.spring.spring_rest_security.dto.StudentDto;
+import com.spring.spring_rest_security.service.StudentService;
 
 import jakarta.validation.Valid;
 

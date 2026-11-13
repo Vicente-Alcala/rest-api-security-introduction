@@ -1,4 +1,4 @@
-package com.spring.spring_rest.entity;
+package com.spring.spring_rest_security.entity;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
